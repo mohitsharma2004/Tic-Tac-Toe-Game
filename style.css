@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Press+Start+2P&display=swap');
+
+html{
+    height: 100%;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    list-style: none;
+    box-sizing: border-box;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-family: "inter", system-ui;
+    color: whitesmoke;
+}
+
+#parentcontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    width: 90vw;
+    z-index: 1;
+}
+
+h1{
+    display: flex;
+    font-size: 14vmin;
+    margin-top: 4vh;
+}
+
+h2{
+    font-size: 9vmin;
+}
+
+a{
+    color: wheat;
+    font-weight: 500;
+}
+
+#turnindicator{
+    display: none;
+    font-size: 3vmin;
+}
+
+/* GAME START SECTION --------------------------------------------------------------------------- */
+
+#gamestart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+    padding: 20px;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#choosefirstplayer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vmin;
+    margin: 5px;
+}
+  
+#choosefirstplayer input[type="radio"]{
+    display: none;
+}
+  
+#choosefirstplayer label {
+    display: block;
+    font-size: 6vmin;
+    font-weight: 900;
+    padding: 10px 20px; 
+    border: 1px solid wheat; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+  
+#choosefirstplayer input[type="radio"]:checked + label{
+    background-color: wheat;
+    color: #3E1E68;
+}
+
+#startbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 6vmin;
+    color: #3E1E68;
+    height: 12vmin;
+    width: 45vmin;
+    margin-top: 4vmin;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startbtn:hover{
+    background-color: wheat;
+}
+
+/* GAME PLAY SECTION ------------------------------------------------------------------------------ */
+
+#gameplay {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#gamegrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+    width: 60vmin;
+}
+
+.XObtn{
+    font-size: 10vmin;
+    font-weight: 900;
+    background-color: white;
+    color: black;
+    height: 18vmin;
+    width: 18vmin;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resetbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 6vmin;
+    color: #3E1E68;
+    height: 12vmin;
+    width: 45vmin;
+    margin-top: 4vmin;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resetbtn:hover{
+    background-color: wheat;
+}
+
+/* GAME END SECTION ------------------------------------------------------------------------------ */
+
+#gameend{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#gameendinner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10vmin;
+    padding: 20px;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#playagainbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 6vmin;
+    background-color: #86ff86;
+    color: #3E1E68;
+    height: 12vmin;
+    width: 45vmin;
+    margin-top: 4vmin;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#playagainbtn:hover{
+    background-color: wheat;
+}
+
+#homebtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 6vmin;
+    background-color: #c2dcff;
+    color: #3E1E68;
+    height: 12vmin;
+    width: 45vmin;
+    margin-top: 4vmin;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#homebtn:hover{
+    background-color: wheat;
+}
+
+#advertisment{
+    font-size: 3vmin;
+}
+
+/* Minor MEDIA QUERIES FOR RESPONSIVNES ---------------------------------------------------------------------- */
+
+@media(max-width: 1024px){
+    #resetbtn{
+        margin-top: 10vmin;
+    }
+}
+
+@media(max-width: 768px){
+    #turnindicator{
+        font-size: 5vmin;
+    }
+    #gamegrid {
+        gap: 2vmin;
+        width: 80vmin;
+    }
+    .XObtn{
+        font-size: 10vmin;
+        height: 25vmin;
+        width: 25vmin;
+        border: none;
+        border-radius: 5px;
+    }
+    #startbtn{
+        height: 15vmin;
+        width: 50vmin;
+        margin-top: 6vmin;
+    }
+    #resetbtn{
+        height: 15vmin;
+        width: 50vmin;
+        margin-top: 15vmin;
+    }
+    #playagainbtn{
+        height: 15vmin;
+        width: 50vmin;
+    }
+    #homebtn{
+        height: 15vmin;
+        width: 50vmin;
+    }
+    #advertisment{
+        font-size: 4vmin;
+    }
+    
+}

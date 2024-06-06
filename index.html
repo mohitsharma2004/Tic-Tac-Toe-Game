@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.freepik.com/512/566/566294.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div id="parentcontainer">
+        <h1>Tic Tac Toe</h1>
+        <p id="turnindicator">Turn:&nbsp;<span id="turn"></span></p>
+        <div id="gamestart">
+            <h2>Who Plays First?</h2>
+            <div id="choosefirstplayer">
+                <input type="radio" id="Xoption" name="myRadio" value="X">
+                <label for="Xoption">X</label>
+                <input type="radio" id="Ooption" name="myRadio" value="O">
+                <label for="Ooption">O</label>
+            </div>
+            <button type="button" id="startbtn" onclick="startgame()">Let's Play!</button>
+
+        </div>
+
+        <div id="gameplay">
+            <div id="gamegrid">
+                <button type="button" class="XObtn"></button>
+                <button type="button" class="XObtn"></button>
+                <button type="button" class="XObtn"></button>
+                <button type="button" class="XObtn"></button>
+                <button type="button" class="XObtn"></button>
+                <button type="button" class="XObtn"></button>
+                <button type="button" class="XObtn"></button>
+                <button type="button" class="XObtn"></button>
+                <button type="button" class="XObtn"></button>
+            </div>
+            <button type="button" id="resetbtn">Reset</button>
+        </div>
+
+        <div id="gameend">
+            <div id="gameendinner">
+                <h2>Winner: <span id="winner"></span></h2>
+                <div id="btncontainer">
+                    <button type="button" id="playagainbtn" onclick="playagain()">Play Again</button>
+                    <button type="button" id="homebtn" onclick="returntohome()">Home</button>
+                </div>
+            </div>
+        </div>
+        <p id="advertisment">Created by <a href="https://www.linkedin.com/in/mohit-sharma-4102bb298/"
+                rel="noopener" target="_blank">Mohit Sharma</a></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
