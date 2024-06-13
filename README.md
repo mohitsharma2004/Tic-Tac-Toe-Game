@@ -1,2 +1,2 @@
 ### Live Preview:
-[Click here to open the game](xo-xo-xo-game.netify.app)
+[Play the game](https://xo-xo-xo-game.netlify.app)
